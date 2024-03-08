@@ -1,5 +1,6 @@
 :root {
     font-family: "Niramit", sans-serif;
+    box-sizing: border-box;
 }
 
 html, 
@@ -7,6 +8,8 @@ body {
     margin: 0;
     padding: 0;
     min-width: 370px;
+    background-color: hsl(291, 50%, 95%);
+    color: #2d094e;
 }
 
 body {
@@ -15,6 +18,7 @@ body {
     align-items: center;
 }
 
+/* Navigation Bar */
 nav {
     display: flex;
     justify-content: space-between;
@@ -25,18 +29,13 @@ nav {
     font-stretch:extra-condensed;
     font-size: 0.95rem;
     padding: 0.5rem;
-    background-color: #f2d7f7;
-    color: #2d094e;
-}
+    background-color: hsl(291, 67%, 91%);
 
+}
 .nav-left {
     display: flex;
     align-items: center;
     margin-left: 0.5em;
-}
-
-.nav-left img {
-    filter: invert(12%) sepia(100%) saturate(500%) hue-rotate(210deg);
 }
 .nav-left p { 
     font-size: 1.25rem;
@@ -57,15 +56,17 @@ nav {
     font-weight: bold;
     margin-left: 1em;
     color: #2d094e;
+    cursor: pointer;
 }
-
-
 .nav-logo {
     width: 40px;
     height: 40px;
     margin: 5px;
     padding: 0;
+    filter: invert(12%) sepia(100%) saturate(500%) hue-rotate(210deg);
 }
+
+/* Expandable Header / Blog Post / About Page */
 
 header {
     background-image: url('../images/main-image.jpg');
@@ -82,14 +83,12 @@ header {
     grid-template: 110px 1fr 2fr / 90%;
     justify-content: center;
 }
-
 header > h4 {
     align-self: end;
     margin: 0;
     font-size: 0.75em;
     font-weight: 300;
 }
-
 header > h2 {
     align-self: start;
     margin: 0.4em 0 0;
@@ -102,3 +101,66 @@ header > p {
 }
 
 
+/* Main Blog Post section */
+main {
+    display: grid;
+    grid-template: 1fr / 90%;
+    justify-content: center;
+}
+
+
+/* Blog post */
+.post-block {
+    padding-top: 1.75em;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.post-block img {
+    width: 100%;
+    border: 10px white solid;
+    box-shadow: 1px 1px 2px rgb(95, 95, 95);
+    align-self: center;
+    box-sizing: border-box;
+
+}
+.post-block h4 {
+    margin: 1em 0 0;
+    font-size: 0.75em;
+    font-weight: 500;
+}
+.post-block h3 {
+    margin: 0.5em 0 0 0;
+    line-height: 1em;
+    text-transform: lowercase;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.post-block p {
+    margin: 0.5em 0 0 0;
+    line-height: 1.2em;
+}
+
+/* Footer */
+footer {
+    background-color: hsl(271, 79%, 10%);
+    color: white;
+    font-family: "Archivo Narrow", sans-serif;
+    font-stretch:extra-condensed;
+    margin-top: 2em;
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+}
+footer h5 {
+    margin: 0;
+    font-weight: 900;
+    font-size: .7rem;
+
+}
+footer p {
+    font-size: .65rem;
+    margin: 0;
+    margin-top:3px;
+    font-weight: 300;
+}
