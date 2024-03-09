@@ -1,6 +1,7 @@
-:root {
+* {
     font-family: "Niramit", sans-serif;
     box-sizing: border-box;
+    user-select: none;
 }
 
 html, 
@@ -43,6 +44,7 @@ nav {
     margin: 5px;
     padding: 0;
     filter: invert(12%) sepia(100%) saturate(500%) hue-rotate(210deg);
+}
 .nav-left p { 
     font-size: 1.25rem;
     font-weight: 800;
@@ -64,10 +66,8 @@ nav {
     color: #2d094e;
     cursor: pointer;
 }
-}
 
 /* Expandable Header / Blog Post / About Page */
-
 header {
     background-image: url('../images/main-image.jpg');
     background-size: cover;
