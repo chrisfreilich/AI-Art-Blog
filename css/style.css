@@ -8,7 +8,7 @@ html,
 body {
     margin: 0;
     padding: 0;
-    min-width: 400px;
+    min-width: 370px;
     background-color: hsl(291, 50%, 95%);
     color: #2d094e;
 }
@@ -35,7 +35,6 @@ nav {
 .nav-left {
     display: flex;
     align-items: center;
-    margin-left: 0.5em;
 }
 .nav-logo {
     width: 40px;
@@ -54,7 +53,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: end;
-    margin-right: 1em;
     margin-top: 3px;
 }
 .nav-right a {  
