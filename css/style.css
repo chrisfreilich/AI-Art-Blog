@@ -8,7 +8,7 @@ html,
 body {
     margin: 0;
     padding: 0;
-    min-width: 370px;
+    min-width: 400px;
     background-color: hsl(291, 50%, 95%);
     color: #2d094e;
 }
@@ -45,7 +45,6 @@ nav {
     filter: invert(12%) sepia(100%) saturate(500%) hue-rotate(210deg);
 }
 .nav-left p { 
-    font-size: 1.25rem;
     font-weight: 800;
     margin:0 0 1px;
     padding: 0;
@@ -59,6 +58,7 @@ nav {
     margin-top: 3px;
 }
 .nav-right a {  
+    font-size: 0.8rem;
     text-decoration: none;
     font-weight: bold;
     margin-left: 1em;
@@ -70,26 +70,35 @@ nav {
 .content {
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;    
+    background-repeat: no-repeat; 
     max-width: 800px;
     height:fit-content;
     justify-content: center;
 }
-.content > h4 {
+.content h2 {
+    align-self: start;
+    margin: 0.4em 0 0;
+    line-height: 1.2em;
+}
+.content h3 {
+    margin: 1em 0 0 0;
+}
+.content h4 {
     align-self: end;
     margin: 0;
     font-size: 0.75em;
     font-weight: 300;
 }
-.content > h2 {
-    align-self: start;
-    margin: 0.4em 0 0;
-    line-height: 1.2em;
+.content h5 {
+    margin: 2em 0 0 0;
+    text-align: center;
+    font-size: 1em;
+
 }
-.content > p {
+.content p {
     align-self: start;
     line-height: 1.3em;
+    margin: 0.75em 0;
 }
 /* Dynamic content: Headline */
 .main-headline {
@@ -98,31 +107,36 @@ nav {
     min-height: 300;
     display: grid;
     grid-template: 110px 1fr 2fr / 90%;
+    width: 100%;   
 }
 .main-headline > p {
     text-shadow: 2px 2px 3px black;
 }
-/* Dynamic content - blog post */
-.blog-post-page > h4 {
-    margin: 1em;
-    display: flex;
-    flex-direction: column;
+/* Dynamic content - single blog post */
+.blog-post-page, .about-me {
+    margin: 1em 1em 0;
 }
 .blog-post-page > img {
     width: 100%;
 }
 
-/* Main Blog Post section */
+/* Dynamic content - about me */
+.about-me img {
+    margin: 1em 0;
+    width: 40vw;
+    align-self: flex-start;
+}
+
+/* Blog Listings */
 main {
     display: grid;
     grid-template: 1fr / 90%;
     justify-content: center;
 }
 
-
-/* Blog post */
+/* Blog listing */
 .post-block {
-    padding-top: 1.75em;
+    padding-top: 1em;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -133,7 +147,6 @@ main {
     box-shadow: 1px 1px 2px rgb(95, 95, 95);
     align-self: center;
     box-sizing: border-box;
-
 }
 .post-block h4 {
     margin: 1em 0 0;
@@ -148,7 +161,7 @@ main {
     font-weight: 700;
 }
 .post-block p {
-    margin: 0.5em 0 0 0;
+    margin: 0.5em 0 1em;
     line-height: 1.2em;
 }
 
