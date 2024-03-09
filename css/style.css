@@ -25,7 +25,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 800px;
     font-family: "Archivo Narrow", sans-serif;
     font-stretch:extra-condensed;
     font-size: 0.95rem;
@@ -69,7 +68,6 @@ nav {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; 
-    max-width: 800px;
     height:fit-content;
     justify-content: center;
 }
@@ -185,4 +183,22 @@ footer p {
     margin: 0;
     margin-top:3px;
     font-weight: 300;
+}
+
+@media (min-width: 800px) {
+    .main-headline {
+        grid-template: 200px 1fr 2fr / 100%;   
+    }
+    .main-headline h2, 
+    .main-headline p, 
+    .main-headline h4 {
+        margin-left: 1.3rem;
+        max-width: 650px;
+    }
+
+    main {
+        margin: 0 1em;
+        grid-template: 1fr / repeat(3,1fr);
+        column-gap: 15px;
+    }
 }
