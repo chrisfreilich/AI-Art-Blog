@@ -30,13 +30,19 @@ nav {
     font-size: 0.95rem;
     padding: 0.5rem;
     background-color: hsl(291, 67%, 91%);
-
+    
 }
 .nav-left {
     display: flex;
     align-items: center;
     margin-left: 0.5em;
 }
+.nav-logo {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    padding: 0;
+    filter: invert(12%) sepia(100%) saturate(500%) hue-rotate(210deg);
 .nav-left p { 
     font-size: 1.25rem;
     font-weight: 800;
@@ -58,12 +64,6 @@ nav {
     color: #2d094e;
     cursor: pointer;
 }
-.nav-logo {
-    width: 40px;
-    height: 40px;
-    margin: 5px;
-    padding: 0;
-    filter: invert(12%) sepia(100%) saturate(500%) hue-rotate(210deg);
 }
 
 /* Expandable Header / Blog Post / About Page */
