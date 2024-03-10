@@ -17,7 +17,7 @@ function handleHomeBtnClick() {
 function handleAboutBtnClick() {
     dynamicContentEl.innerHTML= `<img src="images/chris-logo.png">
                                 <h2>Hi there! My name is Chris and welcome to my AI Art and development journey.</h2>
-                                <p>After several months of learning in the Frontend Developer Career Path, I've made the big jump over to the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.</p>
+                                <p>As a computer software engineer and cinematographer, taking the journey to learning AI generative tools to make art has come naturally to me.</p>
                                 <div class="blog-text">
                                     <h3>How I stay committed to learning</h3>
                                     <p>I like to think of myself as a lifelong learner. I used to spend hours and hours learning, then try to create simple projects using what I learned or work new techniques into existing projects.</p>
