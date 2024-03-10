@@ -33,8 +33,8 @@ function handleAboutBtnClick() {
 function handleBlogListingsClick() {
     dynamicContentEl.innerHTML = `<h4>July 23, 2022</h4>
                                 <h2>My new journey as an AI artist and developer.</h2>
-                                <p>I discovered AI Art when I stumbled across a program called NVIDIA Canvas which would interpret images of areas of solid colors and create landscapes from them.</p>
-                                <img src="images/main-image.jpg" alt="">
+                                <p>I discovered AI Art when I stumbled across a program called NVIDIA Canvas which would interpret images of areas of solid colors and create landscapes from them. I quickly moved on to different tools as they flooded into public availability. Many of the tools require a programmer's mindset to use well, and so are a great way to combine techical and creative sides of my personality!</p>
+                                <img src="images/coming-apart.png" alt="">
                                 <div class="blog-text">
                                     <h3>How I stay committed to learning</h3>
                                     <p>I like to think of myself as a lifelong learner. I used to spend hours and hours learning, then try to create simple projects using what I learned or work new techniques into existing projects.</p>
