@@ -1,1 +1,1 @@
-This is a simple responsive blog implemented as an assignment for the Scrimba Frontend Developers course. The initial design was provided in Figma, which I modified to my needs. Implementation was 100% completed by me.
+This is a **simple responsive** blog implemented as an assignment for the Scrimba Frontend Developers course. The initial design was provided in Figma, which I modified to my needs. Implementation was 100% completed by me.
