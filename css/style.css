@@ -31,10 +31,12 @@ nav {
     padding: 0.5rem;
     background-color: hsl(291, 67%, 91%);    
 }
+
 .nav-left {
     display: flex;
     align-items: center;
 }
+
 .nav-logo {
     width: 40px;
     height: 40px;
@@ -42,18 +44,21 @@ nav {
     padding: 0;
     filter: invert(12%) sepia(100%) saturate(500%) hue-rotate(210deg);
 }
+
 .nav-left p { 
     font-weight: 800;
     margin:0 0 1px;
     padding: 0;
     display: block;
 }
+
 .nav-right {
     display: flex;
     align-items: center;
     justify-content: end;
     margin-top: 3px;
 }
+
 .nav-right a {  
     font-size: 0.8rem;
     text-decoration: none;
@@ -71,31 +76,37 @@ nav {
     height:fit-content;
     justify-content: center;
 }
+
 .content h2 {
     align-self: start;
     margin: 0.4em 0 0;
     line-height: 1.2em;
 }
+
 .content h3 {
     margin: 1em 0 0 0;
 }
+
 .content h4 {
     align-self: end;
     margin: 0;
     font-size: 0.75em;
     font-weight: 300;
 }
+
 .content h5 {
     margin: 2em 0 0 0;
     text-align: center;
     font-size: 1em;
 
 }
+
 .content p {
     align-self: start;
     line-height: 1.3em;
     margin: 0.75em 0;
 }
+
 /* Dynamic content: Headline */
 .main-headline {
     background-image: url('../images/main-image.jpg');
@@ -105,13 +116,16 @@ nav {
     grid-template: 110px 1fr 2fr / 90%;
     width: 100%;   
 }
+
 .main-headline > p {
     text-shadow: 2px 2px 3px black;
 }
+
 /* Dynamic content - single blog post */
 .blog-post-page, .about-me {
     margin: 1em 1em 0;
 }
+
 .blog-post-page > img {
     width: 100%;
 }
@@ -138,6 +152,7 @@ main {
     flex-direction: column;
     align-items: start;
 }
+
 .post-block img {
     width: 100%;
     border: 10px white solid;
@@ -145,11 +160,13 @@ main {
     align-self: center;
     box-sizing: border-box;
 }
+
 .post-block h4 {
     margin: 1em 0 0;
     font-size: 0.75em;
     font-weight: 500;
 }
+
 .post-block h3 {
     margin: 0.5em 0 0 0;
     line-height: 1em;
@@ -157,6 +174,7 @@ main {
     font-size: 1.25rem;
     font-weight: 700;
 }
+
 .post-block p {
     margin: 0.5em 0 1em;
     line-height: 1.2em;
@@ -173,12 +191,14 @@ footer {
     width: 100%;
     text-align: center;
 }
+
 footer h5 {
     margin: 0;
     font-weight: 900;
     font-size: .7rem;
 
 }
+
 footer p {
     font-size: .65rem;
     margin: 0;
@@ -192,17 +212,21 @@ footer p {
         padding: 0.7rem 1rem;
         font-size: 1.25rem;
     }
+
     .nav-logo {
         width: 60px;
         height: 60px;
         margin-right: 0.5rem;
     }
+
     .nav-right a {  
         font-size: 1rem;
     }
+
     .main-headline {
         grid-template: 200px 1fr 2fr / 100%;   
     }
+
     .main-headline h2, 
     .main-headline p, 
     .main-headline h4 {
@@ -220,35 +244,39 @@ footer p {
         margin: 1em 3em 0;
         max-width: 1050px;
     }
+
     .about-me {
         display: grid;
         grid-template: auto / 280px 1fr;
     }
+
     .about-me > img {
         grid-row: 1 / 3;
         grid-column: 1 / 2;
     }
+
     .about-me > h2 {
         grid-row: 1 / 2;
         grid-column: 2 / 3;
         margin: 0 0 0 1.5rem;
         align-self: end;
     }
+
     .about-me > p {
         grid-row: 2 / 3;
         grid-column: 2 / 3;
         margin: 0.75rem 0 0 1.5rem;
     }
+
     .about-me > .blog-text {
         grid-row: 3 / 4;
         grid-column: 1 / -1;
     }
+
     .about-me > h5 {
         grid-row: 4 / 5;
         grid-column: 1 / -1;
         align-self: center;
         margin: 1rem 0 0 0;
     }
-
-
 }
